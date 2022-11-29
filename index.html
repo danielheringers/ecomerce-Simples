@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="./js/database.js"></script>
+    <script defer src="./js/index.js"></script>
+    <meta name="description" content="Loja Virtual da maior empresa tecnológica do Vale do Silício">
+    <title>DanSoft</title>
+</head>
+<header class="cabecalho">
+    <img class="logo" src="./img/logo.png" alt="">
+    
+    <nav>
+        <a class="botaoNav Bcard">Todos</a>
+        <a class="botaoNav Bcard">Janela</a>
+        <a class="botaoNav Bcard">Xcelula</a>
+        <a class="botaoNav Bcard">Palavra</a>
+    </nav>
+</header>
+<body>
+    <main>
+        <div>
+            <ul class="listaProdutos">
+            </ul>
+        </div>
+        <div class="MenuLateral">
+            <div>
+                <input class="campoBusca" type="search" name="Campo de Busca" placeholder="Digite aqui sua pesquisa">
+                <button class="botaoBusca">Pesquisar</button>
+            </div>
+            <div>
+                <aside class="tituloCarrinho">Carrinho de Compras</aside>
+                <div class="listCarrinho">
+                    <ul>
+                        <li class="listaCarrinho">
+                        </li>
+                    </ul>
+                </div>
+                <div class="carrinhoDetails">
+                    <div class="carrinhoDetailsQuant">
+                        <span class="labelQuantidade">Quantidade: </span>
+                        <span class="quantidade"></span>
+                    </div>
+                    <div class="carrinhoDetailsTotal">
+                        <span class="labelTotal">Total: </span>
+                        <span class="total"></span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+</body>
+</html> 

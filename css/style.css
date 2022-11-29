@@ -1,0 +1,326 @@
+/* ESTILOS GERAIS */
+html, body, figure, header,img, div, section, article, input, button, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a,form {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+}
+
+body{
+    background-color: #1d1d1d;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 117px;
+    box-shadow: 0px 1px 1px 0px rgb(105, 61, 216);
+    color: aliceblue;
+    background-color: #1d1d1d;
+}
+.logo{
+    width: 80px;
+}
+h1{
+    color: aliceblue;
+}
+
+nav{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: aliceblue;
+    margin: 20px;
+}
+nav:focus{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #693dd8;
+    margin: 20px;
+}
+
+.botaoNav{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 30px;
+    padding: 12px 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: aliceblue;
+    border: 1px solid #693dd8;;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.botaoNav::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #693dd8;
+    transition: all .5s;
+    z-index: -1;
+}
+
+main{
+    margin: 50px 115px;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+
+.listaProdutos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.cardProduto{
+    width: 32%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: space-between;
+    background-color: #242424;
+    border-radius: 10px;
+    margin: 5px;
+}
+.cardProduto:hover{
+    border: solid 2px #693dd8;;
+}
+.containerImg{
+    background-color: #242424;
+    width: 100%;
+    height: 154px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.containerImg img{
+    width: auto;
+    height: 100%;
+    background-color: #242424;
+}
+
+.categoriaProduto{
+    width: auto;
+    height: 2px;
+    margin-left: 10px;
+    padding: 12px 5px 12px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #693dd8;
+    color: #ffffff;
+    cursor: pointer;
+}
+.tituloProduto{
+    margin-left: 10px;
+    background-color: #242424;
+    color: aliceblue;
+}
+.descProduto{
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: #242424;
+    color: aliceblue;
+}
+.valorProduto{
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #693dd8;
+    background-color: #242424;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 30px;
+    padding: 12px 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: aliceblue;
+    border: 1px solid #693dd8;;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.button::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #693dd8;
+    transition: all .5s;
+    z-index: -1;
+}
+.Bcard::before{
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.Bcard:hover::before{
+    height: 500%;
+}
+
+.MenuLateral{
+    width: 357px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.campoBusca{
+    background-color: #F5F5F5;
+    width: 246px;
+    height: 42px;
+    padding: 10px;
+    margin-right: 4px;
+    border-radius: 5px;
+}
+.botaoBusca{
+    width: 96px;
+    height: 42px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: #693dd8;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.botaoBusca:active{
+    background-color: #3e11ad;
+    cursor: pointer;
+}
+.tituloCarrinho{
+    background-color: #693dd8;
+    width: 347px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    color: #ffffff;
+    font: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+.listaCarrinho{
+    background-color: #202020;
+    height: 214px;
+    overflow-y: auto;
+}
+.cardCarrinho{
+    background-color: #693dd8;   
+    width: auto;
+    height: 92px;
+    color: #F5F5F5;
+    display: flex;
+    margin: 8px;
+    border: solid 2px;
+    border-radius: 5px;
+}
+.cardCarrinho img{
+    width: 90px;
+    height: 100%;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.cardCarrinhoDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #F5F5F5;
+}
+.cardCarrinhoDetails h3{
+    color: #F5F5F5;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.cardCarrinhoValor{
+    color: #F5F5F5;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+}
+.cardCarrinhoRemove{
+    width: 150px;
+    background-color: #3e11ad;
+    padding: 2px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    border-radius: 5px;
+    transition: .3s;
+}
+.cardCarrinhoRemove:hover{
+    background-color: #1c0068;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    border-radius: 5px;
+    transition: .3s;
+}
+.cardCarrinhoRemove:active{
+    background-color: #3e11ad;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.carrinhoDetails{
+    display: flex;
+    flex-direction: column;
+}
+
+.carrinhoDetailsQuant{
+    width: 345px;
+    height: 63px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    color: #F5F5F5;
+    background-color: #242424;
+    padding: 20px;
+}
+.carrinhoDetailsTotal{
+    width: 345px;
+    height: 63px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #F5F5F5;
+    background-color: #242424;
+}
