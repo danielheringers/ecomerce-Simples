@@ -8,3 +8,6 @@ Funcional:
 1-Carrinho de Compras
 
 2-Pesquisar
+
+
+Pages: https://danielheringers.github.io/ecomerce-Simples/
